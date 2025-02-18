@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Professional Portfolio of Zain ul Abdin. Web Developer and AI Enthusiast specializing in JavaScript, PHP, Python, HTML, CSS, Java, React, React Native, Bootstrap 5, jQuery, Laravel, Java Swing, JavaFX, Spring Boot, Servlets, ASP.NET, AI, and Machine Learning.">
+    <meta name="keywords" content="portfolio, web developer, AI, Machine Learning, JavaScript, PHP, Python, HTML, CSS, Java, React, React Native, Bootstrap 5, jQuery, Laravel, Java Swing, JavaFX, Spring Boot, Servlets, ASP.NET, MySQL, MongoDB, AWS, DevOps, Docker, Git, GitHub, TensorFlow, PyTorch, Deep Learning, Neural Networks, NLP, Computer Vision, Data Science, Data Analysis">
+    <meta name="author" content="Zain ul Abdin">
+    <title>Zain ul Abdin Portfolio</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + JohnDoe main styles -->
+	<link rel="stylesheet" href="assets/css/johndoe.css">
+
+
+    <script>
+        document.getElementById("subscriptionForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+    
+            var form = this;
+            var formData = new FormData(form);
+    
+            fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    alert("Subscription successful!"); // Show success message
+                    form.reset(); // Clear form fields
+                } else {
+                    alert("There was an issue. Please try again.");
+                }
+            }).catch(error => {
+                alert("There was an issue. Please try again.");
+            });
+        });
+    </script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <!-- <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a> -->
+    <header class="header">
+        <div class="container">
+            <ul class="social-icons pt-3">
+                <!-- <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li> -->
+                <li class="social-item">
+                    <a class="social-link text-light" href="mailto:zainulabdin.2629@gmail.com" target="_blank">
+                      <i class="ti-google" aria-hidden="true"></i>
+                    </a>
+                  </li>
+
+                <li class="social-item"><a class="social-link text-light" href="https://www.linkedin.com/in/zainulabdin-z1/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://github.com/MirzaZain110"><i class="ti-github" aria-hidden="true"></i></a></li>
+            </ul>  
+            <div class="header-content">
+                <h4 class="header-subtitle" >Hello, I am</h4>
+                <h1 class="header-title">Zain ul Abdin</h1>
+                <h6 class="header-mono" >Software Engineer | Quality Assurance | DevOps </h6>
+                <a href="/assets/resumeZainUlAbdin.pdf" download class="btn btn-primary btn-rounded">
+                    <i class="ti-printer pr-2"></i> Print Resume
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link">Resume</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav brand">
+                    <!-- Image Problem Here  -->
+                    <img src="assets/imgs/avatar.jpg" alt="" class="brand-img"> 
+                    <li class="brand-txt">
+                        <h5 class="brand-title">Zain ul Abdin</h5>
+                        <div class="brand-subtitle">Software Engineer | Quality Assurance | DevOps </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item last-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div id="about" class="row about-section">
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Who am I ?</h3>
+                <span class="line mb-5"></span>
+                <h5 class="mb-3">Empowering Ideas Through Code and Innovation.</h5>
+                <p class="mt-20">I am Zain ul Abdin, a passionate Software Engineering student with expertise in full-stack development and DevOps practices. I specialize in creating innovative and efficient solutions using technologies like React, Spring Boot, and AI frameworks, with a strong focus on building scalable and dynamic applications. My experience extends to implementing DevOps methodologies, such as CI/CD pipelines and cloud-based deployments, ensuring seamless integration and delivery of software. From my final year project, "EventCraft," to developing mobile and web applications, my journey reflects a commitment to learning, innovation, and delivering impactful technology-driven solutions.</p>
+                <!-- <button class="btn btn-outline-danger"> -->
+                    <a href="/assets/resumeZainUlAbdin.pdf" download class="btn btn-outline-danger">
+                    <i class="icon-down-circled2"></i> Download My CV
+                </a>
+                <!-- </button> -->
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light" >Contact Info</h3>
+                <span class="line mb-5"></span>
+                <ul class="mt40 info list-unstyled">
+                    <li><span>Email</span email> : zainulabdin.2629@gmail.com</li>
+                    <li><span>LinkedIn</span> : Zain ul Abdin </li>
+                </ul>
+                <ul class="social-icons">
+                    <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/zainulabdin-z1/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://github.com/MirzaZain110"><i class="ti-github" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="mailto:zainulabdin.2629@gmail.com"><i class="ti-google" aria-hidden="true"></i></a></li>
+                    
+                </ul>    
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">My Expertise</h3>
+                <span class="line mb-5"></span>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-mobile icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Mobile App Development</h6>
+                        <p class="subtitle">Expertise in creating robust Android and iOS mobile applications tailored to your business needs.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-world icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>API Development</h6>
+                        <p class="subtitle">Building secure and scalable APIs using modern backend technologies to power your applications.</p>
+       
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-stats-up icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Digital Marketing</h6>
+                        <p class="subtitle">Delivering impactful and results-driven marketing campaigns to ensure your business thrives.</p>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-desktop icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Web Development</h6>
+                        <p class="subtitle">Designing and developing dynamic, responsive websites to enhance your online presence.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-light-bulb icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>AI/ML Development</h6>
+                        <p class="subtitle">Creating intelligent AI and ML solutions to automate processes and solve complex problems.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-check-box icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Testing Services</h6>
+                        <p class="subtitle">Providing comprehensive software testing to ensure quality, reliability, and performance.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-cloud icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Cloud Services</h6>
+                        <p class="subtitle">Offering scalable and secure cloud solutions for hosting, storage, and deployment needs.</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Resume Section -->
+<section class="section" id="resume">
+    <div class="container">
+        <h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
+        <div class="row">
+            <!-- Expertise Section -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="mt-2">
+                            <h4>Expertise</h4>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="title text-danger">Mar 2024 - Apr 2024</h6>
+                        <p>Data Annotator</p>
+                        <p class="subtitle">Worked remotely at CNTXT, contributing to data labeling and annotation projects.</p>
+                        <hr>
+                        <h6 class="title text-danger">Sep 2024 - Dec 2024</h6>
+                        <p>Teaching Assistant</p>
+                        <p class="subtitle">Assisted in teaching at FAST University, supporting students with coursework and projects.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Education Section -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="mt-2">
+                            <h4>Education</h4>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="title text-danger">2020 - 2024</h6>
+                        <p>Bachelor in Software Engineering</p>
+                        <p class="subtitle">FAST National University</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Skills and Languages Section -->
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="pull-left">
+                            <h4 class="mt-2">Skills</h4>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="card-body pb-2">
+                        <h6>JavaScript</h6>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 87%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h6>TypeScript</h6>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h6>Java</h6>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 91%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h6>SpringBoot</h6>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 94%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h6>React &amp; React Native</h6>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h6>SQL</h6>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h6>PHP</h6>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h6>Others</h6>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 60%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div class="pull-left">
+                            <h4 class="mt-2">Languages</h4>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="card-body pb-2">
+                        <h6>English</h6>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h6>Urdu</h6>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <section class="section bg-dark text-center">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="row ">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-alarm-clock icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">300</h1>
+                            <p class="text-light mb-1">Hours Worked</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">20+</h1>
+                            <p class="text-light mb-1">Project Finished</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-face-smile icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">100+</h1>
+                            <p class="text-light mb-1">Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-heart-broken icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">10+</h1>
+                            <p class="text-light mb-1">Coffee Drinked</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="service">
+        <div class="container">
+            <h2 class="mb-5 pb-4"><span class="text-danger">My</span> Services</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                        <div class="card-header has-icon">
+                            <i class="ti-desktop text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Web Development</h5>
+                            <p class="subtitle">Creating dynamic and responsive websites using technologies like React, Spring Boot, and AWS. Proficient in building user-centric platforms with seamless backend integration.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                        <div class="card-header has-icon">
+                            <i class="ti-mobile text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Mobile App Development</h5>
+                            <p class="subtitle">Developing cross-platform mobile applications using React Native. Delivered apps like 'Weather Forecast' with features such as Google Maps, API integration, and image processing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                        <div class="card-header has-icon">
+                            <i class="ti-layers-alt text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Database Management</h5>
+                            <p class="subtitle">Skilled in designing and managing relational databases using MySQL and PostgreSQL. Optimizing database queries for high-performance applications.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                        <div class="card-header has-icon">
+                            <i class="ti-cloud-up text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Cloud Deployment</h5>
+                            <p class="subtitle">Experienced in deploying applications to AWS using services like S3, EC2, and CodeBuild. Ensuring scalability and reliability of hosted solutions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                        <div class="card-header has-icon">
+                            <i class="ti-bar-chart text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">AI and Machine Learning</h5>
+                            <p class="subtitle">Learning and implementing AI frameworks to develop intelligent applications. Applying AI concepts to improve functionality and user experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                        <div class="card-header has-icon">
+                            <i class="ti-support text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Technical Support</h5>
+                            <p class="subtitle">Providing technical assistance for software issues and system optimization. Ensuring effective communication and problem resolution for clients and team members.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                        <div class="card-header has-icon">
+                            <i class="ti-support text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Quality Assurance (QA)</h5>
+                            <p class="subtitle">Ensuring software reliability through comprehensive testing methodologies. Experienced in manual and automated testing to guarantee product quality.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                        <div class="card-header has-icon">
+                            <i class="ti-share text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Digital Marketing</h5>
+                            <p class="subtitle">Strategizing and executing digital marketing campaigns. Skilled in SEO, content creation, and social media marketing to enhance online visibility and engagement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+
+        </div>
+
+
+        
+    </section>
+    
+
+    
+    <section class="section bg-dark py-5">
+        <div class="container text-center">
+            <h2 class="text-light mb-5 font-weight-normal">I Am Available For FreeLance</h2>
+            <!-- <button class="btn bg-primary w-lg"  >Hire me</button> -->
+            <a href="https://www.fiverr.com/zainulabdin_110" target="_blank" class="btn bg-primary w-lg">Hire me</a>
+
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section bg-custom-gray" id="portfolio">
+        <div class="container">
+            <h1 class="mb-5"><span class="text-danger">My</span> Portfolio</h1>
+            <div class="portfolio">
+                <div class="filters">
+                    <a href="#" data-filter=".new" class="active">
+                        New
+                    </a>
+                    <a href="#" data-filter=".advertising">
+                        Advertising
+                    </a>
+                    <a href="#" data-filter=".branding">
+                        Branding
+                    </a>
+                    <a href="#" data-filter=".web">
+                        Web
+                    </a>
+                </div>
+                <div class="portfolio-container"> 
+                    <div class="col-md-6 col-lg-4 web new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/web-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">WEB</h6>
+                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                </div>
+                            </div>   
+                        </div>             
+                    </div>
+                    <div class="col-md-6 col-lg-4 web new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/web-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/web-2.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">WEB</h6>
+                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                </div>
+                            </div> 
+                        </div>                         
+                    </div>
+                    <div class="col-md-6 col-lg-4 advertising new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/advertising-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                         
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/advertising-2.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">ADVERSTISING</h6>
+                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                </div>
+                            </div>    
+                        </div>              
+                    </div> 
+                    <div class="col-md-6 col-lg-4 web">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/web-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/web-4.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">WEB</h6>
+                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                </div>
+                            </div>
+                        </div>                                                     
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 advertising"> 
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/advertising-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                               
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/advertising-1.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">ADVERSITING</h6>
+                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                </div>
+                            </div>
+                        </div>                                                       
+                    </div> 
+                    <div class="col-md-6 col-lg-4 web new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/web-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
+                           <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/web-3.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">WEB</h6>
+                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                </div>
+                            </div>
+                        </div>                                                     
+                    </div>
+                    <div class="col-md-6 col-lg-4 advertising new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/advertising-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">       
+                           <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/advertising-3.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">ADVERSITING</h6>
+                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                </div>
+                            </div>
+                        </div>                                                       
+                    </div> 
+                    <div class="col-md-6 col-lg-4 advertising new"> 
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/advertising-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">            
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/advertising-4.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">ADVERTISING</h6>
+                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                </div>
+                            </div>
+                        </div>
+                                
+                    </div> 
+                    <div class="col-md-6 col-lg-4 branding new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/branding-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                        
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/branding-1.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">BRANDING</h6>
+                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                </div>
+                            </div> 
+                        </div>
+                    </div> 
+                    <div class="col-md-6 col-lg-4 branding">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/branding-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/branding-2.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">BRANDING</h6>
+                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                </div>
+                            </div>
+                        </div>                                                     
+                    </div> 
+                    <div class="col-md-6 col-lg-4 branding new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/branding-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">   
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/branding-3.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">BRANDING</h6>
+                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                </div>
+                            </div>
+                        </div>                                                    
+                    </div> 
+                    <div class="col-md-6 col-lg-4 branding">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/branding-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                      
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/branding-4.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">BRANDING</h6>
+                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                </div>
+                            </div>
+                        </div>                                                      
+                    </div> 
+                    <div class="col-md-6 col-lg-4 branding">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/branding-5.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">          
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/branding-5.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">BRANDING</h6>
+                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                </div>
+                            </div>
+                        </div>                                                   
+                    </div>
+                </div> 
+            </div>  
+        </div>            
+    </section>
+    <!-- End of portfolio section -->
+
+    
+
+    <div class="section contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8"><section class="section" id="blog">
+                    <div class="container">
+                        <h2 class="mb-5">Latest <span class="text-danger">News</span></h2>
+                        <div class="row">
+                            <!-- Blog Post 1: DevOps -->
+                            <div class="blog-card">
+                                <div class="img-holder">
+                                    <img src="assets/imgs/DevOps.png" alt="DevOps Best Practices" style="width: 100%; height: auto; overflow: hidden;">
+                                </div>
+                                <div class="content-holder">
+                                    <h6 class="title">Mastering DevOps: Best Practices</h6>
+                
+                                    <p class="post-details">
+                                        <a href="#">By: Admin</a>
+                                        <a href="#"><i class="ti-heart text-danger"></i> 320</a>
+                                        <a href="#"><i class="ti-comment"></i> 154</a>
+                                    </p>
+                
+                                    <p>DevOps bridges the gap between development and operations, fostering collaboration and automation to streamline workflows. Learn the best practices for CI/CD, monitoring, and infrastructure as code.</p>
+                
+                                    <p><b>Unlock efficiency with automation and continuous feedback loops.</b></p>
+                                    <p>Adopting DevOps methodologies enhances deployment frequency, reduces failure rates, and improves system reliability. Tools like Kubernetes, Jenkins, and Terraform are game-changers.</p>
+                
+                                    <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
+                                </div>
+                            </div>
+                
+                            <!-- Blog Post 2: Software Quality Assurance -->
+                            <div class="blog-card">
+                                <div class="img-holder">
+                                    <img src="assets/imgs/sqa.jpg" alt="SQA Strategies" style="width: 100%; height: auto; overflow: hidden;">
+                                </div>
+                                <div class="content-holder">
+                                    <h6 class="title">Ensuring Software Quality with SQA</h6>
+                
+                                    <p class="post-details">
+                                        <a href="#">By: Admin</a>
+                                        <a href="#"><i class="ti-heart text-danger"></i> 289</a>
+                                        <a href="#"><i class="ti-comment"></i> 127</a>
+                                    </p>
+                
+                                    <p>Software Quality Assurance (SQA) ensures that software meets the highest standards before deployment. From test automation to performance testing, discover strategies to enhance quality.</p>
+                
+                                    <p><b>Manual vs. Automated Testing: Which one to choose?</b></p>
+                                    <p>While manual testing provides deep insights, automation accelerates repetitive tasks, ensuring efficiency and accuracy. Tools like Selenium, JUnit, and TestNG are essential for QA professionals.</p>
+                
+                                    <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
+                                </div>
+                            </div>
+                
+                            <!-- Blog Post 3: Software Engineering -->
+                            <div class="blog-card">
+                                <div class="img-holder">
+                                    <img src="assets/imgs/software.jpg" alt="Software Engineering Trends" style="width: 100%; height: auto; overflow: hidden;">
+                                </div>
+                                <div class="content-holder">
+                                    <h6 class="title">Top Software Engineering Trends in 2025</h6>
+                
+                                    <p class="post-details">
+                                        <a href="#">By: Admin</a>
+                                        <a href="#"><i class="ti-heart text-danger"></i> 402</a>
+                                        <a href="#"><i class="ti-comment"></i> 210</a>
+                                    </p>
+                
+                                    <p>From AI-driven development to microservices, software engineering is evolving rapidly. Stay ahead of the curve with emerging trends and technologies shaping the industry.</p>
+                
+                                    <p><b>AI, Cloud, and Blockchain are transforming software engineering.</b></p>
+                                    <p>As organizations shift towards scalable and secure architectures, developers must adapt to new paradigms. Explore how AI-assisted coding and serverless computing are redefining software development.</p>
+                
+                                    <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+                  
+
+
+                <div class="col-lg-8 subscription-card">
+                    <h4 class="subscription-title">Subscribe to Our Newsletter</h4>
+                    <p>Stay updated with our latest news and offers.</p>
+                    
+                    <form id="subscriptionForm" action="https://formspree.io/f/mqaegeoj" method="POST">
+                        
+                        <div class="form-group">
+                            <input class="form-control" style="margin-bottom: 16px;" type="text" name="name" placeholder="Enter your Name *" required>
+                        </div>
+                
+                        <div class="form-group">
+                            <input class="form-control" type="email" name="email" placeholder="Enter your email *" required>
+                        </div>
+                
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            
+                
+                <div class="col-lg-4">
+                    <div class="contact-info-card">
+                        <h4 class="contact-title" id="contact">Get in touch</h4>
+    
+                        <div class="row mb-1">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-map-alt icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline" style="color: black;">Address :<br> 
+                                    <span class="text-muted">Karachi.</span>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-envelope icon-md" style="color: black;"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline" style="color: black;">Email :<br> 
+                                    <span class="text-muted">zainulabdin.2629@gmail.com</span>
+                                </h6>
+                            </div>
+                        </div>
+    
+                        <ul class="social-icons pt-4">
+                            <li class="social-item">
+                                <a class="social-link text-dark" href="mailto:zainulabdin.2629@gmail.com">
+                                    <i class="ti-google" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a class="social-link text-dark" href="https://www.linkedin.com/in/zainulabdin-z1/">
+                                    <i class="ti-linkedin" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a class="social-link text-dark" href="https://github.com/MirzaZain110">
+                                    <i class="ti-github" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+            
+    
+            
+    
+        </div>
+    </div>
+    
+    </div>
+    <footer class="footer py-3">
+        <div class="container">
+            <p class="small mb-0 text-light">
+                &copy; <script>document.write(new Date().getFullYear())</script> Created With <i class="ti-heart text-danger"></i> By <span class="text-danger" title="Bootstrap 4 Themes and Dashboards">Zain ul Abdin</span>
+            </p>
+        </div>
+    </footer>
+
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+    
+    <!-- Google mpas -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+    <!-- JohnDoe js -->
+    <script src="assets/js/johndoe.js"></script>
+
+</body>
+</html>
